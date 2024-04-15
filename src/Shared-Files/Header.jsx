@@ -5,8 +5,11 @@ import { authContext } from "../Providers/AuthProvider";
 
 const Header = () => {
 
-    const { user } = useContext(authContext)
+    const { user, logOut } = useContext(authContext)
     const handleSignOut = () => {
+        logOut()
+            .then()
+            .catch()
 
     }
     const navLinks = <>

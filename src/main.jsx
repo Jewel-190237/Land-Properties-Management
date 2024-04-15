@@ -11,10 +11,12 @@ import Home from './Components/Layouts/Home';
 import Login from './Authentication/Login';
 import Register from './Authentication/Register';
 import Contact from './Components/Layouts/Contact';
-import { Result } from 'postcss';
 import Achievement from './Components/Layouts/Achievement';
 import Profile from './Components/Layouts/Profile';
 import AuthProvider from './Providers/AuthProvider';
+import LandDetails from './Components/Layouts/LandDetails';
+import PrivateRoute from './Providers/PrivateRoute';
+import Result from './Components/Layouts/Result';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('Land.json')
+        loader: () => fetch('/Land.json')
       },
       {
         path: '/login',
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/result',
-        element: <Result></Result>
+        element: <PrivateRoute><Result></Result></PrivateRoute>
       },
       {
         path: '/achievement',
@@ -48,7 +50,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/profile',
-        element: <Profile></Profile>
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: '/Land/:id',
+        element: <PrivateRoute><LandDetails></LandDetails></PrivateRoute>
       }
     ]
   },
