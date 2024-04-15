@@ -8,6 +8,7 @@
         "price": "$150,000",
         "area": "10 acres",
         "status": "sale",
+        "review": "4",
         "Location": "Mountain View, CA",
         "special_facilities": [
             "Mountain Views",
@@ -24,6 +25,7 @@
         "area": "5 acres",
         "status": "sale",
         "Location": "Asheville, NC",
+        "review": "4",
         "special_facilities": [
             "Riverfront Access",
             "Fishing Spot"
@@ -39,6 +41,7 @@
         "area": "8 acres",
         "status": "sale",
         "Location": "Lake Placid, NY",
+        "review": "4",
         "special_facilities": [
             "Lakefront Views",
             "Boating Dock"
@@ -54,6 +57,7 @@
         "area": "15 acres",
         "status": "rent",
         "Location": "Bend, OR",
+        "review": "4",
         "special_facilities": [
             "Forest Trails",
             "Wildlife Watching"
@@ -69,6 +73,7 @@
         "area": "20 acres",
         "status": "sale",
         "Location": "Sedona, AZ",
+        "review": "4",
         "special_facilities": [
             "Desert Views",
             "Stargazing"
@@ -84,6 +89,7 @@
         "area": "3 acres",
         "status": "sale",
         "Location": "Malibu, CA",
+        "review": "4",
         "special_facilities": [
             "Oceanfront Views",
             "Beach Access"
@@ -99,6 +105,7 @@
         "area": "12 acres",
         "status": "sale",
         "Location": "Telluride, CO",
+        "review": "4",
         "special_facilities": [
             "Mountain Views",
             "Skiing Nearby"
@@ -114,6 +121,7 @@
         "area": "6 acres",
         "status": "sale",
         "Location": "Boise, ID",
+        "review": "4",
         "special_facilities": [
             "Riverfront Views",
             "Picnic Areas"
@@ -129,6 +137,7 @@
         "area": "7 acres",
         "status": "sale",
         "Location": "Lexington, KY",
+        "review": "4",
         "special_facilities": [
             "Meadow Views",
             "Nature Trails"
