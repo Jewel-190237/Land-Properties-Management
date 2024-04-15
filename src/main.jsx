@@ -54,7 +54,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/Land/:id',
-        element: <PrivateRoute><LandDetails></LandDetails></PrivateRoute>
+        element: <PrivateRoute><LandDetails></LandDetails></PrivateRoute>,
+        loader: () => fetch('/Land.json')
       }
     ]
   },
