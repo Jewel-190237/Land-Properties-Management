@@ -1,13 +1,31 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { authContext } from "../Providers/AuthProvider";
 
 const Login = () => {
 
-    const handleSignIn = () => {
+    const { signIn } = useContext(authContext)
+    const handleSignIn = e => {
+        e.preventDefault()
 
+        const form = new FormData(e.currentTarget)
+
+        const email = form.get('email')
+        const password = form.get('password')
+
+        console.log(email, password)
+
+        signIn(email, password)
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
 
     const handlesSignInWithGoogle = () => {
-        
+
     }
     return (
         <div>
@@ -41,15 +59,15 @@ const Login = () => {
                                 <p className="text-center"> or</p>
                             </div>
                             <div>
-                            <p> Login with  
-                                <button onClick={handlesSignInWithGoogle} className="btn btn-outline ml-4 btn-success">Google</button>
+                                <p> Login with
+                                    <button onClick={handlesSignInWithGoogle} className="btn btn-outline ml-4 btn-success">Google</button>
                                 </p>
                             </div>
                             <div>
                                 <p>New Here ? please <Link to='/register'>
                                     <button className="btn btn-outline btn-success">Register</button>
                                 </Link> </p>
-                                
+
                             </div>
                         </form>
                     </div>
