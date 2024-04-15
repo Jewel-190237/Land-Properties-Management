@@ -9,7 +9,6 @@ const Header = () => {
     }
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/teacher'>Teacher</NavLink></li>
         <li><NavLink to='/achievement'>Achievement</NavLink></li>
         <li><NavLink to='/contact'>Contact Us</NavLink></li>
         {user && <>

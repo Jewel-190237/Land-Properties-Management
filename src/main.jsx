@@ -11,10 +11,10 @@ import Home from './Components/Layouts/Home';
 import Login from './Authentication/Login';
 import Register from './Authentication/Register';
 import Contact from './Components/Layouts/Contact';
-import Teacher from './Components/Layouts/Teacher';
 import { Result } from 'postcss';
 import Achievement from './Components/Layouts/Achievement';
 import Profile from './Components/Layouts/Profile';
+import AuthProvider from './Providers/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('Land.json')
       },
       {
         path: '/login',
@@ -36,10 +37,6 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
-      },
-      {
-        path: '/teacher',
-        element: <Teacher></Teacher>
       },
       {
         path: '/result',
@@ -59,6 +56,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
   </React.StrictMode>,
 )
