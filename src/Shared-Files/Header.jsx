@@ -1,9 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import user1 from '../assets/user.png'
+import { useContext } from "react";
+import { authContext } from "../Providers/AuthProvider";
 
 const Header = () => {
 
-    const user = null
+    const { user } = useContext(authContext)
     const handleSignOut = () => {
 
     }
