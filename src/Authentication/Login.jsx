@@ -1,10 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../Providers/AuthProvider";
 
 const Login = () => {
 
-    const { signIn } = useContext(authContext)
+    const location = useLocation()
+    const naviGate = useNavigate()
+
+    const { signIn, googleSignIn, gitHubSignIn } = useContext(authContext)
     const handleSignIn = e => {
         e.preventDefault()
 
@@ -18,6 +21,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result)
+                naviGate(location?.state ? location.state: '/')
             })
             .catch(error => {
                 console.error(error)
@@ -25,8 +29,27 @@ const Login = () => {
     }
 
     const handlesSignInWithGoogle = () => {
-
+        googleSignIn()
+        .then(result => {
+            console.log(result)
+            naviGate(location?.state ? location.state: '/')
+        })
+        .catch(error => {
+            console.error(error)
+        })
     }
+    const handlesSignInWithGitHub = () => {
+        gitHubSignIn()
+        .then(result => {
+            console.log(result)
+            naviGate(location?.state ? location.state: '/')
+        })
+        .catch(error => {
+            console.error(error)
+        })
+    }
+
+
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -58,9 +81,12 @@ const Login = () => {
                             <div>
                                 <p className="text-center"> or</p>
                             </div>
-                            <div>
-                                <p> Login with
+                            <div className=" flex">
+                                <p>
                                     <button onClick={handlesSignInWithGoogle} className="btn btn-outline ml-4 btn-success">Google</button>
+                                </p>
+                                <p>
+                                    <button onClick={handlesSignInWithGitHub} className="btn btn-outline ml-4 btn-success">gitHub</button>
                                 </p>
                             </div>
                             <div>
