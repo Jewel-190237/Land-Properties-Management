@@ -2,8 +2,17 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
 
-    const handleRegister = () => {
-        
+    const handleRegister = e => {
+        e.preventDefault()
+
+        const form = new FormData(e.currentTarget)
+
+        const name = form.get('name')
+        const email = form.get('email')
+        const password = form.get('password')
+
+        console.log(name, email, password)
+
     }
     return (
         <div>

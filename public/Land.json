@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "Scenic Valley Retreat",
+        "image": "https://i.ibb.co/whDjkQ4/12.jpg",
+        "name": "Scenic Valley Retreat",
+        "description": "A serene piece of land nestled in the heart of nature, offering breathtaking views of the valley and surrounding mountains.",
+        "price": "$150,000",
+        "area": "10 acres",
+        "status": "sale",
+        "Location": "Mountain View, CA",
+        "special_facilities": [
+            "Mountain Views",
+            "Hiking Trails"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Riverside Haven",
+        "image": "https://i.ibb.co/GvcJFpS/11.jpg",
+        "name": "Riverside Haven",
+        "description": "Tranquil land with riverfront access, perfect for building your dream home or vacation retreat.",
+        "price": "$120,000",
+        "area": "5 acres",
+        "status": "sale",
+        "Location": "Asheville, NC",
+        "special_facilities": [
+            "Riverfront Access",
+            "Fishing Spot"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Lakeview Estate",
+        "image": "https://i.ibb.co/tZzzcR6/10.jpg",
+        "name": "Lakeview Estate",
+        "description": "Idyllic land overlooking a pristine lake, ideal for a peaceful lakeside getaway or year-round living.",
+        "price": "$200,000",
+        "area": "8 acres",
+        "status": "sale",
+        "Location": "Lake Placid, NY",
+        "special_facilities": [
+            "Lakefront Views",
+            "Boating Dock"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Forest Retreat",
+        "image": "https://i.ibb.co/6mN2tp3/9.jpg",
+        "name": "Forest Retreat",
+        "description": "Secluded forest land with towering trees and abundant wildlife, perfect for those seeking privacy and tranquility.",
+        "price": "$100,000",
+        "area": "15 acres",
+        "status": "rent",
+        "Location": "Bend, OR",
+        "special_facilities": [
+            "Forest Trails",
+            "Wildlife Watching"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Desert Oasis",
+        "image": "https://i.ibb.co/V3NGyR6/8.jpg",
+        "name": "Desert Oasis",
+        "description": "Expansive desert land offering stunning sunsets and clear night skies, a unique canvas for your desert retreat.",
+        "price": "$80,000",
+        "area": "20 acres",
+        "status": "sale",
+        "Location": "Sedona, AZ",
+        "special_facilities": [
+            "Desert Views",
+            "Stargazing"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Coastal Paradise",
+        "image": "https://i.ibb.co/PrYrNHR/7.jpg",
+        "name": "Coastal Paradise",
+        "description": "Prime coastal land with sweeping ocean views, perfect for building a beachfront estate or vacation home.",
+        "price": "$300,000",
+        "area": "3 acres",
+        "status": "sale",
+        "Location": "Malibu, CA",
+        "special_facilities": [
+            "Oceanfront Views",
+            "Beach Access"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Mountain Hideaway",
+        "image": "https://i.ibb.co/rfxB51V/6.jpg",
+        "name": "Mountain Hideaway",
+        "description": "Secluded mountain land surrounded by lush forests, offering unmatched serenity and outdoor adventures.",
+        "price": "$180,000",
+        "area": "12 acres",
+        "status": "sale",
+        "Location": "Telluride, CO",
+        "special_facilities": [
+            "Mountain Views",
+            "Skiing Nearby"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Riverfront Sanctuary",
+        "image": "https://i.ibb.co/N1kZ8Yv/5.jpg",
+        "name": "Riverfront Sanctuary",
+        "description": "Tranquil land along the riverbanks, where you can unwind and enjoy the soothing sounds of flowing water.",
+        "price": "$140,000",
+        "area": "6 acres",
+        "status": "sale",
+        "Location": "Boise, ID",
+        "special_facilities": [
+            "Riverfront Views",
+            "Picnic Areas"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Riverfront Sanctuary",
+        "image": "https://i.ibb.co/ss7zW1Q/4.jpg",
+        "name": "Meadow Vista Retreat",
+        "description": "Expansive meadow land with panoramic views of rolling hills and open skies, perfect for a peaceful countryside escape.",
+        "price": "$160,000",
+        "area": "7 acres",
+        "status": "sale",
+        "Location": "Lexington, KY",
+        "special_facilities": [
+            "Meadow Views",
+            "Nature Trails"
+        ]
+    }
+]
