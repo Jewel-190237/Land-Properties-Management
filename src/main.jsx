@@ -11,6 +11,10 @@ import Home from './Components/Layouts/Home';
 import Login from './Authentication/Login';
 import Register from './Authentication/Register';
 import Contact from './Components/Layouts/Contact';
+import Teacher from './Components/Layouts/Teacher';
+import { Result } from 'postcss';
+import Achievement from './Components/Layouts/Achievement';
+import Profile from './Components/Layouts/Profile';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +36,22 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/teacher',
+        element: <Teacher></Teacher>
+      },
+      {
+        path: '/result',
+        element: <Result></Result>
+      },
+      {
+        path: '/achievement',
+        element: <Achievement></Achievement>
+      },
+      {
+        path: '/profile',
+        element: <Profile></Profile>
       }
     ]
   },

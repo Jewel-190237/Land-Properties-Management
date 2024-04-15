@@ -4,17 +4,18 @@ import user1 from '../assets/user.png'
 const Header = () => {
 
     const user = null
-    const handleSignOut = () =>{
+    const handleSignOut = () => {
 
     }
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
-        <li><NavLink to='/register'>Register</NavLink></li>
-        <li><NavLink to='/orders'>Orders</NavLink></li>
+        <li><NavLink to='/teacher'>Teacher</NavLink></li>
+        <li><NavLink to='/achievement'>Achievement</NavLink></li>
+        <li><NavLink to='/contact'>Contact Us</NavLink></li>
         {user && <>
             <li><NavLink to='/profile'>Profile</NavLink></li>
-            <li><NavLink to='/dashboard'>DashBoard</NavLink></li>
+            <li><NavLink to='/Result'>Result</NavLink></li>
+
         </>
         }
 
@@ -45,17 +46,28 @@ const Header = () => {
                     </ul>
                 </div>
                 {
-                user ?
-                    <div className="navbar-end gap-3">
-                        <img className="w-1/12 rounded-full" src={user1} alt="" />
-                        <button onClick={handleSignOut} className="btn">Sign Out</button>
-                    </div>
-                    :
-                    <div className="navbar-end gap-3">
-                        <img className="w-1/12 rounded-full" src={user1} alt="" />
-                        <Link to='/login'><a className="btn">Login</a></Link>
-                    </div>
-            }
+                    user ?
+                        <div className="navbar-end gap-3">
+                            <div className="dropdown dropdown-end">
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img alt="Tailwind CSS Navbar component" src={user1} />
+                                    </div>
+                                </div>
+                                <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                    <li><a>Profile</a></li>
+                                    <li><a>Settings</a></li>
+                                    <li onClick={handleSignOut}><a>Logout</a></li>
+                                </ul>
+                            </div>
+                            <button onClick={handleSignOut} className="btn">Sign Out</button>
+                        </div>
+                        :
+                        <div className="navbar-end gap-3">
+                            <img className="w-1/12 rounded-full" src={user1} alt="" />
+                            <Link to='/login'><a className="btn">Login</a></Link>
+                        </div>
+                }
             </div>
         </div>
     );
