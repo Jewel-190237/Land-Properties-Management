@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../Providers/AuthProvider";
 
+
+import { ToastContainer, toast } from 'react-toastify';
+
 const Login = () => {
 
     const location = useLocation()
@@ -21,7 +24,8 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result)
-                naviGate(location?.state ? location.state: '/')
+                toast.success('Login Successfully')
+                naviGate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error)
@@ -30,23 +34,23 @@ const Login = () => {
 
     const handlesSignInWithGoogle = () => {
         googleSignIn()
-        .then(result => {
-            console.log(result)
-            naviGate(location?.state ? location.state: '/')
-        })
-        .catch(error => {
-            console.error(error)
-        })
+            .then(result => {
+                console.log(result)
+                naviGate(location?.state ? location.state : '/')
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
     const handlesSignInWithGitHub = () => {
         gitHubSignIn()
-        .then(result => {
-            console.log(result)
-            naviGate(location?.state ? location.state: '/')
-        })
-        .catch(error => {
-            console.error(error)
-        })
+            .then(result => {
+                console.log(result)
+                naviGate(location?.state ? location.state : '/')
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
 
 
@@ -55,8 +59,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-
+                        <h1 className="text-3xl font-bold">Login Your Account</h1>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSignIn} className="card-body">
@@ -97,6 +100,7 @@ const Login = () => {
                             </div>
                         </form>
                     </div>
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>

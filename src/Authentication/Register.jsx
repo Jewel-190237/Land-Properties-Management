@@ -1,9 +1,14 @@
+
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { authContext } from "../Providers/AuthProvider";
+
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Register = () => {
 
+    const naviGate = useNavigate()
     const { createUser } = useContext(authContext)
 
     const handleRegister = e => {
@@ -20,12 +25,15 @@ const Register = () => {
         createUser(email, password)
         .then(result => {
             console.log(result)
+            naviGate('/')
+            toast('User Registered Successfully')
         })
         .catch(error => {
             console.error(error)
         })
 
     }
+    
     return (
         <div>
             <div>
@@ -76,6 +84,7 @@ const Register = () => {
                             </div>
                         </div>
                     </div>
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>
