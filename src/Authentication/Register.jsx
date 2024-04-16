@@ -3,14 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { authContext } from "../Providers/AuthProvider";
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
-import UseTitle from "../Title/UseTitle";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import UseTitle from "../Components/Title/UseTitle";
 
 const Register = () => {
 
-    UseTitle("Register");
-
-
+    UseTitle("Register")
     const navigate = useNavigate();
     const { createUser } = useContext(authContext);
     const [passwordError, setPasswordError] = useState(null);
@@ -59,7 +57,6 @@ const Register = () => {
             });
         }
     }
-
 
     return (
         <div>
