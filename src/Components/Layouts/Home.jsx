@@ -1,10 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Land from "./Land";
+import UseTitle from "../Title/UseTitle";
 
 
 const Home = () => {
 
+    UseTitle("Home")
     const lands = useLoaderData()
 
     return (

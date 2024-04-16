@@ -5,8 +5,10 @@ import { authContext } from "../Providers/AuthProvider";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UseTitle from "../Components/Title/UseTitle";
 
 const Login = () => {
+    UseTitle("Login")
 
     const location = useLocation()
     const naviGate = useNavigate()
