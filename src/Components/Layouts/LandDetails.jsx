@@ -1,6 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import UseTitle from "../Title/UseTitle";
 
 const LandDetails = () => {
+    UseTitle("Land Details")
 
     const { id } = useParams()
     const lands = useLoaderData()
