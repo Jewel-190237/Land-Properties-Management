@@ -4,6 +4,7 @@ import { authContext } from "../Providers/AuthProvider";
 
 
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -24,7 +25,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result)
-                toast('Login Successfully')
+                toast.success('Login Successfully')
                 naviGate(location?.state ? location.state : '/')
             })
             .catch(error => {
@@ -96,7 +97,6 @@ const Login = () => {
                                 <p>New Here ? please <Link to='/register'>
                                     <button className="btn btn-outline btn-success">Register</button>
                                 </Link> </p>
-
                             </div>
                         </form>
                     </div>
