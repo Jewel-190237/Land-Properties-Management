@@ -24,7 +24,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result)
-                toast.success('Login Successfully')
+                toast('Login Successfully')
                 naviGate(location?.state ? location.state : '/')
             })
             .catch(error => {
