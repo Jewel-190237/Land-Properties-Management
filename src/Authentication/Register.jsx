@@ -40,11 +40,11 @@ const Register = () => {
 
             Swal.fire({
                 icon: 'success',
-                title: 'Registration successful!',
+                title: 'Registration successfully Done',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 2000
             });
-            navigate('/login');
+            navigate('/');
         } catch (error) {
 
             console.error(error);
@@ -55,7 +55,6 @@ const Register = () => {
             });
         }
     }
-
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
