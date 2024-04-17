@@ -6,11 +6,11 @@ import { authContext } from "../Providers/AuthProvider";
 const Header = () => {
 
     const { user, logOut } = useContext(authContext)
+
     const handleSignOut = () => {
         logOut()
             .then()
             .catch()
-
     }
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -22,8 +22,8 @@ const Header = () => {
 
         </>
         }
-
     </>
+
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -55,7 +55,13 @@ const Header = () => {
                             <div className="dropdown dropdown-end">
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
-                                        <img alt="Tailwind CSS Navbar component" src={user1} />
+                                        {
+                                            user.photoURL ?
+                                                <img alt="user" src={user.photoURL} />
+                                            :
+                                            <img alt="user" src={user1} />    
+                                        }
+
                                     </div>
                                 </div>
                                 <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">

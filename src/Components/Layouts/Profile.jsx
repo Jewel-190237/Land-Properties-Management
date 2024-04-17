@@ -1,25 +1,25 @@
-import { useContext } from "react";
-import { authContext } from "../../Providers/AuthProvider";
+import auth from "../../Firebase/firebase.config";
 import UseTitle from "../Title/UseTitle";
-
 
 const Profile = () => {
 
     UseTitle("Profile")
-    const { user } = useContext(authContext)
-    console.log(user)
+    
+    const userInfo = auth.currentUser;
+    console.log(userInfo)
+    
         return (
             <div>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row">
-                        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                        <img src={userInfo.photoURL} className="max-w-sm rounded-lg shadow-2xl" />
                         <div>
-                            <h1 className="text-2xl font-bold"></h1>
-                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                            <button className="btn btn-primary">Get Started</button>
+                            <h1 className="text-2xl font-bold">{userInfo.displayName}</h1>
+                            <p className="py-2">{userInfo.email}</p>
                         </div>
-                    </div>
+                    </div>  
                 </div>
+                <button className="btn btn-primary mx-auto items-center">Update Profile</button>
             </div>
         );
     };
