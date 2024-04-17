@@ -19,7 +19,6 @@ const Header = () => {
         {user && <>
             <li><NavLink to='/profile'>Profile</NavLink></li>
             <li><NavLink to='/Result'>Result</NavLink></li>
-
         </>
         }
     </>
@@ -39,7 +38,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <Link to='/'>
-                        <a className="btn btn-ghost text-xl">AISC</a>
+                        <a className="btn btn-ghost text-xl">Ideal Properties Ltd</a>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -65,8 +64,9 @@ const Header = () => {
                                     </div>
                                 </div>
                                 <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                                    <li><a>Profile</a></li>
-                                    <li><a>Settings</a></li>
+                                    
+                                    <Link to='/profile'> <li><a>Profile</a></li> </Link>
+                                    <Link to='/profile'> <li><a>Setting</a></li> </Link>
                                     <li onClick={handleSignOut}><a>Logout</a></li>
                                 </ul>
                             </div>

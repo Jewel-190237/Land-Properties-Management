@@ -1,3 +1,4 @@
+import 'animate.css';
 
 const Banner = () => {
     return (
@@ -7,10 +8,10 @@ const Banner = () => {
                     <div className="hero rounded-xl sm:w-full md:w-full lg:w-full min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/nwbWrVF/beautiful-landscape-with-clear-sky.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                                <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                <button className="btn btn-primary">Get Started</button>
+                            <div className="max-w-md ">
+                                <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInLeft"> Welcome to Ideal Properties Ltd</h1>
+                                <p className="mb-5 animate__animated animate__backInRight">Explore our stunning properties showcased in properties, featuring picturesque views, prime locations, and unmatched investment opportunities. Start your journey towards your dream property today</p>
+                                <button className="btn btn-primary animate__animated animate__backInUp">Get Started</button>
                             </div>
                         </div>
                     </div>
@@ -23,10 +24,10 @@ const Banner = () => {
                     <div className="hero md:w-full sm:w-full rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/j6fM7xf/beautiful-landscape-with-small-village.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                                <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                <button className="btn btn-primary">Get Started</button>
+                            <div className="max-w-md ">
+                                <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInLeft"> Welcome to Ideal Properties Ltd</h1>
+                                <p className="mb-5 animate__animated animate__backInRight">Explore our stunning properties showcased in properties, featuring picturesque views, prime locations, and unmatched investment opportunities. Start your journey towards your dream property today</p>
+                                <button className="btn btn-primary animate__animated animate__backInUp">Get Started</button>
                             </div>
                         </div>
                     </div>
@@ -39,10 +40,10 @@ const Banner = () => {
                     <div className="hero md:w-full sm:w-full rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/BVrGbYV/rural-landscape-with-field-road.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                                <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                <button className="btn btn-primary">Get Started</button>
+                            <div className="max-w-md ">
+                                <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInLeft"> Welcome to Ideal Properties Ltd</h1>
+                                <p className="mb-5 animate__animated animate__backInRight">Explore our stunning properties showcased in properties, featuring picturesque views, prime locations, and unmatched investment opportunities. Start your journey towards your dream property today</p>
+                                <button className="btn btn-primary animate__animated animate__backInUp">Get Started</button>
                             </div>
                         </div>
                     </div>
@@ -55,10 +56,10 @@ const Banner = () => {
                     <div className="hero md:w-full sm:w-full rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/7SNNwbF/wallpaperflare-com-wallpaper.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                                <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                <button className="btn btn-primary">Get Started</button>
+                        <div className="max-w-md ">
+                                <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInLeft"> Welcome to Ideal Properties Ltd</h1>
+                                <p className="mb-5 animate__animated animate__backInRight">Explore our stunning properties showcased in properties, featuring picturesque views, prime locations, and unmatched investment opportunities. Start your journey towards your dream property today</p>
+                                <button className="btn btn-primary animate__animated animate__backInUp">Get Started</button>
                             </div>
                         </div>
                     </div>
