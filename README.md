@@ -1,6 +1,6 @@
 # React + Vite
 
-Responsive for all devices
+- Responsive for all devices
 Used Animated CSS feature
 Used Dynamic Title in every Pages
 Used React LeafLet feature
