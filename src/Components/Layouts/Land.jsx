@@ -18,8 +18,9 @@ const Land = ({ land }) => {
                         Discount
                         <div className="badge badge-secondary">{discount}</div>
                     </h2>
-                    <div className="card-actions mt-2">
-                        <Link to={`/Land/${id}`}><button className="btn btn-primary">View Details</button></Link>
+                    <div className="card-actions mt-2 flex gap-5">
+                        <Link to={`/Land/${id}`}><button className="btn btn-primary mr-5">View Details</button></Link>
+                        <Link to='/location'><button className="btn btn-primary">View Map</button></Link>
                     </div>
                 </div>
             </div>
