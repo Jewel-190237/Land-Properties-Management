@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Land from "./Land";
 import UseTitle from "../Title/UseTitle";
+import BreakingNews from "./BreakingNews";
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
 
     return (
         <div>
+            <BreakingNews></BreakingNews>
             <Banner></Banner>
             <div>
                 <h2 className="text-3xl text-center mt-5">Land Properties: {lands.length}</h2>
