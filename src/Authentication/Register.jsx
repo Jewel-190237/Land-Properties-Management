@@ -17,7 +17,6 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
 
-
         const form = new FormData(e.currentTarget);
         const name = form.get('name');
         const email = form.get('email');
@@ -25,7 +24,6 @@ const Register = () => {
         const photoUrl = form.get('photoUrl');
         setPasswordError('');
         console.log(name, photoUrl);
-
 
         const hasUppercase = /[A-Z]/.test(password);
         const hasLowercase = /[a-z]/.test(password);
