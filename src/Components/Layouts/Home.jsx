@@ -22,6 +22,36 @@ const Home = () => {
                         </Land>)
                     }
                 </div>
+                <h2 className="text-3xl my-6 text-center">FAQ</h2>
+                <div className="join join-vertical w-full">
+                    <div className="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" defaultChecked />
+                        <div className="collapse-title text-xl font-medium">
+                            Have any Discount ?
+                        </div>
+                        <div className="collapse-content">
+                            <p>Yes</p>
+                        </div>
+                    </div>
+                    <div className="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div className="collapse-title text-xl font-medium">
+                            Have Replace
+                        </div>
+                        <div className="collapse-content">
+                            <p>No</p>
+                        </div>
+                    </div>
+                    <div className="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div className="collapse-title text-xl font-medium">
+                            Contact Any time ?
+                        </div>
+                        <div className="collapse-content">
+                            <p>Yes</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
