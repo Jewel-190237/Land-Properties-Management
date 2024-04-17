@@ -16,8 +16,8 @@ import Profile from './Components/Layouts/Profile';
 import AuthProvider from './Providers/AuthProvider';
 import LandDetails from './Components/Layouts/LandDetails';
 import PrivateRoute from './Providers/PrivateRoute';
-import Result from './Components/Layouts/Result';
 import ErrorPage from './Components/Layouts/ErrorPage';
+import Location from './Components/Location/Location';
 
 const router = createBrowserRouter([
   {
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <Contact></Contact>
       },
       {
-        path: '/result',
-        element: <PrivateRoute><Result></Result></PrivateRoute>
+        path: '/location',
+        element: <PrivateRoute><Location></Location> </PrivateRoute>
       },
       {
         path: '/achievement',
