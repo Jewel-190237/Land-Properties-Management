@@ -10,19 +10,12 @@
 <h1>Special Features</h1>
 <ul>
     <li> <b> Implemented Responsive Design: </b> Ensured the website is visually appealing and functional across all devices, including desktops, tablets, and mobile phones. </li>
-
     <li> <b> Utilized Animated CSS Features: </b>  Incorporated CSS animations to enhance user experience and engagement throughout the website. </li>
-
     <li> <b> Implemented Dynamic Titles: </b> Used dynamic title generation to display relevant and descriptive titles for each page, improving SEO and user navigation. </li>
-
     <li> <b> Integrated React Leaflet: </b> Utilized React Leaflet to integrate interactive maps and geospatial data visualization into the website, enhancing user interaction and information presentation. </li>
-
     <li> <b> Implemented Authentication: </b>  Integrated authentication functionalities using Google Sign-In, email-password authentication, and GitHub authentication, ensuring secure access control for users. </li>
-
     <li> <b> Implemented Protected Routes: </b>  Created protected routes to restrict access to certain pages or features based on user authentication status, ensuring secure navigation and data protection. </li>
-
     <li> <b> Utilized React Router: </b> Employed React Router for efficient client-side navigation, providing seamless and responsive routing within the single-page application (SPA) architecture </li>
-
     <li> <b> Created an Error Page: </b> Developed a dedicated error page to handle and gracefully display error messages or fallback content when users encounter unexpected issues or pages not found. </li>
 
   
