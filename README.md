@@ -20,14 +20,14 @@
 
 <h1>Special Features</h1>
 <ul>
-- Used React Router for navigation.
-- Implemented authentication with Google, email-password, and GitHub.
-- Implemented Protected Routes.
-- Implemented Dynamic Titles on every page.
-- Utilized Animated CSS features.
-- Implemented Responsive Design for all devices.
-- Integrated React Leaflet for maps.
-- Created an Error Page for handling errors.
+    - Used React Router for navigation.
+    - Implemented authentication with Google, email-password, and GitHub.
+    - Implemented Protected Routes.
+    - Implemented Dynamic Titles on every page.
+    - Utilized Animated CSS features.
+    - Implemented Responsive Design for all devices.
+    - Integrated React Leaflet for maps.
+    - Created an Error Page for handling errors.
 </ul>
 
 <h1>Technologies Used</h1>
